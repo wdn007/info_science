@@ -15,7 +15,7 @@ window.onload=function(){
   // 遍历所有的页签
   for(var i=0;i<lis.length;i++){
     lis[i].id=i;
-    lis[i].onmouseover=function(){
+    lis[i].onclick=function(){             //若为onmouseover就是自动切换
       // 用that这个变量来引用当前滑过的li
       var that=this;
       // 如果存在准备执行的定时器，立刻清除，只有当前停留时间大于500ms时才开始执行

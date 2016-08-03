@@ -12,7 +12,7 @@ var suningImages = function(){
 			var posx ;
 			var posy ;
 			var i = 0 ;
-			ul.css('width',len*200);
+			ul.css('width',len*150);
 			image.prev('div').click(function(e){
 				//alert($(this));
 				if(i<=0){
@@ -53,14 +53,14 @@ var suningImages = function(){
 					if(index>=len)
 					{
 						index=0;
-						ul.stop().animate({marginLeft: 0 },300);
+						ul.stop().animate({marginLeft: 0 },1000);
 					}
 					that.next(index);
 				}else{
 					index--;
 					if(index<0){
 						index=len-1;
-						ul.stop().animate({marginLeft: -200*parseInt(index/4)*4 },300);
+						ul.stop().animate({marginLeft: -230*parseInt(index/4)*4 },1000);
 					};
 					that.prev(index);
 				}	
@@ -79,7 +79,7 @@ var suningImages = function(){
 			
 			$(document).keyup(function(e){
 				var e = e || window.event ;
-				if(e.which == 39){
+				if(e.which == 13){
 					index++;
 					if(index>=len){
 						index=0;
@@ -87,11 +87,11 @@ var suningImages = function(){
 					}
 					that.next(index);
 					
-				}else if(e.which== 37 ){
+				}else if(e.which== 11 ){
 					index--;
 					if(index<0){
 						index=len-1;
-						ul.stop().animate({marginLeft: -200*parseInt(index/4)*4 },300);
+						ul.stop().animate({marginLeft: -230*parseInt(index/4)*4 },300);
 					};
 					that.prev(index);
 				}
@@ -110,12 +110,12 @@ var suningImages = function(){
 			btn.eq(i).find('a').addClass('on').parent().siblings().find('a').removeClass('on');
 		},
 		scroll:function(i){
-			ul.stop().animate({marginLeft: -200*4*i },300);
+			ul.stop().animate({marginLeft: -230*4*i },300);
 		},
 		next:function(index){
 			var that = this ;
 			if(((index)%4)==0){
-				ul.stop().animate({marginLeft: -200*(index) },300);
+				ul.stop().animate({marginLeft: -230*(index) },300);
 			}
 			that.addbk(index);
 			setTimeout(function(){that.loadimg(index);},400);
@@ -123,7 +123,7 @@ var suningImages = function(){
 		prev:function(index){
 			var that = this ;
 			if((index+1)%4==0){
-				ul.stop().animate({marginLeft: -200*parseInt(index/4)*4 },300);
+				ul.stop().animate({marginLeft: -230*parseInt(index/4)*4 },300);
 			}
 			that.addbk(index);
 			setTimeout(function(){that.loadimg(index);},400);
