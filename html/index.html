@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>广西信息科学实验中心</title>
+		<link rel="shortcut icon" href="../images/logo_icon.png" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<script type="text/javascript" src="../js/jquery.1.10.2.js" ></script>
+		<script type="text/javascript" src="../js/jquery-1.7.1.min.js" ></script>
+		<script type="text/javascript" src="../js/myjs1.js" ></script>
+		<script type="text/javascript" src="../js/myjs2.js" ></script>
+		<script type="text/javascript" src="../js/myjs3.js" ></script>
+		<script>
+		jQuery(function($){
+			
+			$('#demo2').slideBox({
+				direction : 'top',//left,top#方向
+				duration : 0.3,//滚动持续时间，单位：秒
+				easing : 'linear',//swing,linear//滚动特效
+				delay : 5,//滚动延迟时间，单位：秒
+				startIndex : 1//初始焦点顺序
+			});
+			
+		});
+		</script>
+	</head>
+	<body>
+		<header>
+			<div id="pra">
+				<a href="#">设为首页</a>
+				<span>|</span>
+				<a href="#">加入收藏</a>
+				<span>|</span>
+				<a href="#">联系我们</a>
+			</div>
+			<div id="header_left">
+				<img src="../images/logo.png">
+			</div>
+			<div id="header_right">
+				<input type="button" name="search_btn" class="search_btn" />
+				<input type="text" name="search" class="search" placeholder="SEARCH" />
+			</div>
+		</header>
+		<nav>
+			<ul id="nav_first">
+				<li class="selected"><a href="#">首页</a></li>
+				<li><a href="#">实验室概括</a></li>
+				<li><a href="#">研究方向</a>
+					<ul id="nav_sec">
+						<li><a href="#">食品加工与组分变化</a></li>
+						<li><a href="#">食品配料与添加剂的生物制造</a></li>
+						<li><a href="#">食品安全性检测与控制</a></li>
+						<li><a href="#">食品加工新技术原理及应用</a></li>
+					</ul>
+				</li>
+				<li><a href="#">承担项目</a></li>
+				<li><a href="#">科研成果</a></li>
+				<li><a href="#">学术交流</a></li>
+				<li><a href="#">开放基金</a></li>
+				<li><a href="#">人才培养</a></li>
+				<li><a href="#">规章制度</a></li>
+				<li><a href="#">测试平台</a></li>
+				<li><a href="#">下载中心</a></li>
+			</ul>
+		</nav>
+		<div id="container">
+		    <div id="list" style="left: -1100px;">
+		        <img src="../images/scroll.jpg" alt="1"/>
+		        <img src="../images/scroll.jpg" alt="1"/>
+		        <img src="../images/scroll.jpg" alt="2"/>
+		        <img src="../images/scroll.jpg" alt="3"/>
+		        <img src="../images/scroll.jpg" alt="4"/>
+		        <img src="../images/scroll.jpg" alt="5"/>
+		        <img src="../images/scroll.jpg" alt="5"/>
+		    </div>
+		    <div id="buttons">
+		        <span index="1" class="on"></span>
+		        <span index="2"></span>
+		        <span index="3"></span>
+		        <span index="4"></span>
+		        <span index="5"></span>
+		    </div>
+		    <a href="javascript:;" id="prev" class="arrow"><img src="../images/left_grey.png"></a>
+		    <a href="javascript:;" id="next" class="arrow"><img src="../images/right_grey.png"></a>
+		</div>
+		<div id="content">
+			<div class="left">
+				<div class="banner">
+					<img src="../images/notice_icon.png">
+					<h3>通知公告Notice</h3>
+					<a href="#"><i class="more_icon"></i></a>
+				</div>
+				<ul class="new_list">
+					<li><a href="#">出国团组信息公示（国重室2016010号）    <span class="time">2016-5-1<span></a></li>
+					<li><a href="#">出国团组信息公示（国重室2016010号）    <span class="time">2016-5-1<span></a></li>
+					<li><a href="#">出国团组信息公示（国重室2016010号）    <span class="time">2016-5-1<span></a></li>
+				</ul>
+			</div>
+			<div class="right">
+				<div class="banner">
+					<img src="../images/File.png">
+					<h3>信息简报News</h3>
+					<a href="#" class="more_icon"></a>
+				</div>
+				<div id="demo2" class="slideBox">
+				  <ul class="items">
+				    <li><a href="#" title="标题一"><img src="../images/scoll2.jpg"></a></li>
+				    <li><a href="#" title="标题二"><img src="../images/scoll2.jpg"></a></li>
+				    <li><a href="#" title="标题三"><img src="../images/scoll2.jpg"></a></li>
+				    <li><a href="#" title="标题四"><img src="../images/scoll2.jpg"></a></li>
+				    <li><a href="#" title="标题五"><img src="../images/scoll2.jpg"></a></li>
+				  </ul>
+				</div>
+				<div>
+					<ul class="right_list">
+						<li><a href="#">第二届学术委员会第五次会议    <span class="time">2016-5-1<span></a></li>
+						<li><a href="#">第二届学术委员会第五次会议    <span class="time">2016-5-1<span></a></li>
+						<li><a href="#">第二届学术委员会第五次会议    <span class="time">2016-5-1<span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="left">
+				<div class="title">
+					<img src="../images/key.png">
+					<h4>快速链接Links</h4>
+					<a href="#" class="more_btn">more>></a>
+				</div>
+				<ul class="link_list">
+					<li><a href="#"><img src="../images/reservation.jpg"></a></li>
+					<li><a href="#"><img src="../images/feedback.jpg"></a></li>
+					<li><a href="#"><img src="../images/download.jpg"></a></li>
+					<li><a href="#"><img src="../images/contact.jpg"></a></li>
+				</ul>
+				<select id="link_select">
+					<option value="">=========常用友情链接=========</option>
+					<option value="">1</option>
+					<option value="">2</option>
+					<option value="">3</option>
+				</select>
+			</div>
+			<div class="right">
+				<div class="middle">
+					<div class="title">
+						<img src="../images/light.png">
+						<h4>学术活动</h4>
+						<a href="#" class="more_btn"> more>> </a>
+					</div>
+					<div>
+						<ul class="middle_list">
+							<li><a href="#">新加坡南洋理工大学段宏伟博士学    <span class="time">2016-5-1<span></a></li>
+							<li><a href="#">新加坡南洋理工大学段宏伟博士学    <span class="time">2016-5-1<span></a></li>
+							<li><a href="#">新加坡南洋理工大学段宏伟博士学    <span class="time">2016-5-1<span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="R">
+					<div class="title">
+						<img src="../images/edit .png">
+						<h4>论文在线</h4>
+						<a href="#" class="more_btn">more>></a>
+					</div>
+					<div>
+					<ul class="right_list">
+						<li><a href="#">Title:Stability of whey protein  hydro    <span class="time">2016-5-1<span></a></li>
+						<li><a href="#">Title:Stability of whey protein  hydro    <span class="time">2016-5-1<span></a></li>
+						<li><a href="#">Title:Stability of whey protein  hydro    <span class="time">2016-5-1<span></a></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+			<div id="show">
+				<div class="Container">
+				    <div class="switch">
+				    	<div class="icon1"><a href="#" title="上一个" onfocus="this.blur();">上一个</a></div>
+				        <div class="switch_center" id="pics">
+				        	<ul>
+				        	 	<li><a href="#" class="on"><img src="../images/instruction.jpg" /></a></li>
+				                <li><a href="#"><img src="../images/instruction.jpg" /></a></li>
+				                <li><a href="#"><img src="../images/instruction.jpg" /></a></li>
+				                <li><a href="#"><img src="../images/instruction.jpg" /></a></li>
+				                <li><a href="#"><img src="../images/instruction.jpg" /></a></li>
+				                <li><a href="#"><img src="../images/instruction.jpg" /></a></li>
+				                <li><a href="#"><img src="../images/instruction.jpg" /></a></li>
+				                <li><a href="#"><img src="../images/instruction.jpg" /></a></li>
+				                <li><a href="#"><img src="../images/instruction.jpg" /></a></li>
+				                <li><a href="#"><img src="../images/instruction.jpg" /></a></li>
+				                <li><a href="#"><img src="../images/instruction.jpg" /></a></li>
+				                <li><a href="#"><img src="../images/instruction.jpg" /></a></li>
+				                <li><a href="#"><img src="../images/instruction.jpg" /></a></li>
+				                <li><a href="#"><img src="../images/instruction.jpg" /></a></li>
+				                <li><a href="#"><img src="../images/instruction.jpg" /></a></li>
+				                <li><a href="#"><img src="../images/instruction.jpg" /></a></li>
+				                <li><a href="#"><img src="../images/instruction.jpg" /></a></li>
+				            </ul>
+				      </div>
+				        <div class="icon2"><a href="#" title="下一个" onfocus="this.blur();">下一个</a></div>
+				        <div class="clear"></div>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div id="count">
+				<h5>流量统计：</h5>
+				<ul>
+					<li>浏览量：364654</li>
+					<li>今日浏览：43 </li>
+					<li> IP：39111</li>
+					<li>今日IP：5 </li>
+				</ul>
+			</div>
+			<div id="adress">
+				<h5>联系我们：</h5>
+				<ul>
+					<li><img src="../images/home.png">桂林电子科技大学尧山校区</li>
+					<li><img src="../images/call_contact.png">0773-0000000</li>
+				</ul>
+			</div>
+			<p>Copyright ©2016 广西信息科学实验中心 All rights reserved.　网站制作维护：XXXXX</p>
+		</footer>
+	</body>
+</html>
